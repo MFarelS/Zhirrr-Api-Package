@@ -65,7 +65,8 @@ zahir.muslim.wirid()
 
 | nama modul | params | thing | response | description |
 | :--- | :---------- | :--- | :--- | :--- |
-| asmaulhusna | - | - | json | Menampilkan Data Asmaul Husna |
+| asmaulhusna | - | - | json | Menampilkan Data Asmaul Husna Full 99 |
+| asmaulhusnarandom | - | - | json | Menampilkan Data Asmaul Husna Secara Random |
 | tahlil | - | - | json | Menampilkan Data Doa Tahlil |
 | ayatkursi | - | - | json | Menampilkan Data Doa Ayat Kursi |
 | kisahnabi | nabi | nama nabi | json | Menampilkan Kisah 25 Nabi |
@@ -121,6 +122,35 @@ zahir.gambar.muslim()
 | cyberspace | - | - | json | Gambar Wallpaper Nuansa Cyberspace |
 | muslim | - | - | json | Gambar Wallpaper Nuansa Islami |
 | mountain | - | - | json | Gambar Wallpaper Nuansa Pegunungan |
+
+</details>
+
+### Other
+
+```js
+//Contoh!
+zahir.other.fakename("en")
+.then(res => console.log(res))
+.catch(err => console.log(err))
+
+zahir.other.kodepos("jakarta")
+.then(res => console.log(res))
+.catch(err => console.log(err))
+```
+
+<details>
+  <summary><b>List dari modul di atas (jenis-modul = other)</b> (tekan untuk melihat)</summary>
+
+| nama modul | params | thing | response | description |
+| :--- | :---------- | :--- | :--- | :--- |
+| fakename | country | kode negara | json | Menampilkan Bio Data Orang Secara Random |
+| cekip | ip | nomor ip | json | Cek/Track IP Dengan Nomor IP |
+| kodepos | q | nama daerah | json | Cek Kodepos |
+| hilih | kata | kata | json | Hilih Generator |
+| shortlink | url | url | json | Short Link Tinyurl |
+| searchlirik | search | lagu | json | Cari Lirik Lagu Dengan Mudah |
+| searchchord | q | lagu | json | Cari Chord Lagu Dengan Mudah |
+| randomquotes | - | - | json | Menampilkan Quotes Secara Random |
 
 </details>
 
