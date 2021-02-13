@@ -1,28 +1,29 @@
 {
-  "name": "@arugaz/arugaz-api",
-  "version": "1.0.10",
-  "description": "Access ArugaZ Rest Api Programmatically",
+  "name": "@zahirr/zhirrr-api",
+  "version": "1.0.0",
+  "description": "Program Package Api Zhirrr",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArugaZ/arugaz-api.git"
+    "url": "git+https://github.com/Zhirrr/Zhirrr-Api-Package.git"
   },
   "keywords": [
     "nodejs",
     "rest api",
     "api",
-    "arugaz",
-    "scraper"
+    "zhirrr",
+    "scraper",
+    "npm"
   ],
-  "author": "ArugaZ // arugaastri@gmail.com",
-  "license": "GPL-3.0",
+  "author": "Zhirrr // arugaastri@gmail.com",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArugaZ/arugaz-api/issues"
+    "url": "https://github.com/Zhirrr/Zhirrr-Api-Package/issues"
   },
-  "homepage": "https://github.com/ArugaZ/arugaz-api#readme",
+  "homepage": "https://github.com/Zhirrr/Zhirrr-Api-Package#readme",
   "dependencies": {
     "bent": "^7.3.12",
     "jsdom": "^16.4.0",
