@@ -13,10 +13,10 @@ $ npm install @zahirr/zhirrr-api
 ## Cara Menggunakan
 
 ```js
-const zahirr = require('@zahirr/zhirrr-api');
+const zahir = require('@zahirr/zhirrr-api');
 
 /*
-zahirr.jenis-modul.nama-modul(params)
+zahir.jenis-modul.nama-modul(params)
 .then(res => console.log(res))
 .catch(err => console.log(err))
 */
@@ -76,7 +76,7 @@ zahir.muslim.wirid()
 ### Edukasi
 
 ```js
-//Example!
+//Contoh!
 zahir.edukasi.covidindo()
 .then(res => console.log(res))
 .catch(err => console.log(err))
@@ -95,5 +95,31 @@ zahir.edukasi.infogempa()
 | covidindo | - | - | json | Data Covid Indonesia |
 | infogempa | - | - | json | Data Gempa Yg Terjadi Sekarang |
 | kbbi | text | kata | json | Data KBBI |
+
+</details>
+
+### Gambar
+
+```js
+//Contoh!
+zahir.gambar.programming()
+.then(res => console.log(res))
+.catch(err => console.log(err))
+
+zahir.gambar.muslim()
+.then(res => console.log(res))
+.catch(err => console.log(err))
+```
+
+<details>
+  <summary><b>List dari modul di atas (jenis-modul = edukasi)</b> (tekan untuk melihat)</summary>
+
+| nama modul | params | thing | response | description |
+| :--- | :---------- | :--- | :--- | :--- |
+| technology | - | - | json | Gambar Wallpaper Nuansa Technology |
+| programming | - | - | json | Gambar Wallpaper Nuansa Programming |
+| cyberspace | - | - | json | Gambar Wallpaper Nuansa Cyberspace |
+| muslim | - | - | json | Gambar Wallpaper Nuansa Islami |
+| mountain | - | - | json | Gambar Wallpaper Nuansa Pegunungan |
 
 </details>
