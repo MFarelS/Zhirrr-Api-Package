@@ -1,38 +1,69 @@
 const fetch = require('node-fetch');
-const copid = 'https://covid19-api-zhirrr.vercel.app'
-const anjay = 'https://kbbi-api-zhirrr.vercel.app'
-const palpale = 'https://gempa-api-zhirrr.vercel.app'
+const pos = 'https://kodepos-api-zhirrr.vercel.app'
+const palsu = 'https://fakename-api-zhirrr.vercel.app'
+const cek = 'https://cek-ip-zhirrr.vercel.app'
+const hayuk = 'https://hilih-api-zhirrr.vercel.app'
+const short = 'https://short-api-zhirrr.vercel.app'
+const python = 'https://python-api-zhirrr.herokuapp.com'
 
-module.exports.covidworld = function covidworld() {
+
+module.exports.fakename = function fakename(query) {
 	return new Promise((resolve, reject) => {
-		fetch(copid+'/api/world')
+		fetch(palsu+'/api/fakename?country=' + encodeURIComponent(query))
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.covidindo = function covidindo() {
+module.exports.cekip = function cekip(query) {
 	return new Promise((resolve, reject) => {
-		fetch(copid+'/api/covid-indonesia')
+		fetch(cek+'/api/cek?ip=' + encodeURIComponent(query))
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.kbbi = function kbbi(query) {
+module.exports.kodepos = function kodepos(query) {
 	return new Promise((resolve, reject) => {
-		fetch(anjay+'/api/kbbi?text=' + encodeURIComponent(query))
+		fetch(pos+'/?q=' + encodeURIComponent(query))
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.infogempa = function infogempa() {
+module.exports.hilih = function hilih(query) {
 	return new Promise((resolve, reject) => {
-		fetch(anjay+'/api/gempa')
+		fetch(hayuk+'/api/hilih?kata=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.shortlink = function shortlink(query) {
+	return new Promise((resolve, reject) => {
+		fetch(short+'/api/short?url=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.searchlirik = function searchlirik(query) {
+	return new Promise((resolve, reject) => {
+		fetch(python+'/api/lirik?search=' + encodeURIComponent(query))
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.searchchord = function searchchord(query) {
+	return new Promise((resolve, reject) => {
+		fetch(python+'/api/chord?q=' + encodeURIComponent(query))
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
