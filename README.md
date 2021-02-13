@@ -123,3 +123,7 @@ zahir.gambar.muslim()
 | mountain | - | - | json | Gambar Wallpaper Nuansa Pegunungan |
 
 </details>
+
+### Link Packages
+
+https://www.npmjs.com/package/zhirrr-api
