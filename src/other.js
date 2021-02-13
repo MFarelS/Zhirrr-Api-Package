@@ -69,3 +69,12 @@ module.exports.searchchord = function searchchord(query) {
 		.catch(reject)
 	})
 }
+
+module.exports.randomquotes = function randomquotes() {
+	return new Promise((resolve, reject) => {
+		fetch(python+'/api/random/quotes')
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
