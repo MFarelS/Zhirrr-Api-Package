@@ -30,7 +30,7 @@ module.exports.cyberspace = function cyberspace() {
 
 module.exports.muslim = function muslim() {
 	return new Promise((resolve, reject) => {
-		fetch(base+'/api/muslim')
+		fetch(base+'/api/islamic')
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
