@@ -1,9 +1,9 @@
-# ArugaZ-Api
+# Zhirrr-Api
 Official Zhirrr Api NPM Package
 
 #### Jika ada masalah di dalam web api, langsung laporkan aja yak :)
 
-## Installation
+## Installasi
 
 Via NPM:
 ```bash
