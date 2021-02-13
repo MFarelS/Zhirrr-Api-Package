@@ -1,37 +1,45 @@
 const fetch = require('node-fetch')
-const base = 'https://sosmed-api-zhirrr.vercel.app'
-const facebook = 'https://fb-api-zhirrr.vercel.app'
+const base = 'https://wallpaper-api-zhirrr.vercel.app'
 
-module.exports.igstalk = function igstalk(query) {
+module.exports.technology = function technology() {
 	return new Promise((resolve, reject) => {
-		fetch(base+'/api/ig/stalk?user=' + encodeURIComponent(query))
+		fetch(base+'/api/technology')
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.igdown = function igdown(query) {
+module.exports.programming = function programming() {
 	return new Promise((resolve, reject) => {
-		fetch(base+'/api/ig?url=' + encodeURIComponent(query))
+		fetch(base+'/api/programming')
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.tiktokdown = function tiktokdown(query) {
+module.exports.cyberspace = function cyberspace() {
 	return new Promise((resolve, reject) => {
-		fetch(base+'/api/tiktok?url=' + encodeURIComponent(query))
+		fetch(base+'/api/cyberspace')
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
 	})
 }
 
-module.exports.fbdown = function fbdown(query) {
+module.exports.muslim = function muslim() {
 	return new Promise((resolve, reject) => {
-		fetch(facebook+'/?url=' + encodeURIComponent(query))
+		fetch(base+'/api/muslim')
+		.then(res => res.json())
+		.then(resolve)
+		.catch(reject)
+	})
+}
+
+module.exports.mountain = function mountain() {
+	return new Promise((resolve, reject) => {
+		fetch(base+'/api/mountain')
 		.then(res => res.json())
 		.then(resolve)
 		.catch(reject)
