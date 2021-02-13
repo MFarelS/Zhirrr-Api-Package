@@ -1,4 +1,4 @@
 exports.sosmed = require('./media');
 exports.muslim = require('./islamic');
-exports.edu = require('./education');
+exports.edukasi = require('./edukasi');
 exports.flaming = require('./flaming')
