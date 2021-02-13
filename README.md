@@ -112,7 +112,7 @@ zahir.gambar.muslim()
 ```
 
 <details>
-  <summary><b>List dari modul di atas (jenis-modul = edukasi)</b> (tekan untuk melihat)</summary>
+  <summary><b>List dari modul di atas (jenis-modul = gambar)</b> (tekan untuk melihat)</summary>
 
 | nama modul | params | thing | response | description |
 | :--- | :---------- | :--- | :--- | :--- |
