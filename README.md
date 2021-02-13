@@ -7,13 +7,13 @@ Official Zhirrr Api NPM Package
 
 Via NPM:
 ```bash
-$ npm install @zahirr/zhirrr-api
+$ npm install zhirrr-api
 ```
 
 ## Cara Menggunakan
 
 ```js
-const zahir = require('@zahirr/zhirrr-api');
+const zahir = require('zhirrr-api');
 
 /*
 zahir.jenis-modul.nama-modul(params)
